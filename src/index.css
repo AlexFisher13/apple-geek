@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,900');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: gainsboro;
+}
+.container {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+}
+.sidebar {
+  padding-top: 20px;
+  background-color: rgba(0,0,0, .1);
+}
+.iphoneGrid {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 10px;
+}
+.iphoneCard {
+  background-color: white;
+  padding: 10px;
+  /*-webkit-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.39);*/
+  /*-moz-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.39);*/
+  /*box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.39);*/
+  border-radius: 3px;
+  transition: all .3s linear;
+}
+.iphoneCard:hover {
+  transform: scale(1.02);
+  -webkit-box-shadow: 12px 12px 12px -2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 12px 12px 12px -2px rgba(0,0,0,0.3);
+  box-shadow: 12px 12px 12px -2px rgba(0,0,0,0.3);
+}
+button {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 0;
+  font-size: 1rem;
+  padding: 0;
+  color: rgba(0,0,0, .5);
+  font-weight: 300;
+  background-color: transparent;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255, .9);
+}
+button:active {
+  background-color: rgba(255,255,255, .5);
+}
+
+img {
+  width: 90%;
+}
+p {
+  font-size: .77rem;
+  margin: 2px;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  display: inline-block;
+  margin: 15px 10px;
+  font-weight: 300;
+}
+h2 a {color: rgba(0,0,0, .4);}
+h2 a:hover {color: rgba(0,0,0, .75);}
+h2 a:active {color: rgba(0,0,0, .9);}
+
+small {
+  color: rgba(0,0,0, .35);
+  font-weight: 200;
+  font-size: .75rem;
+}
+.header {
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 0px -5px 21px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px -5px 21px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px -5px 21px 10px rgba(0,0,0,0.2);
+}
+.year, .name {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  color: darkgray;
+}
+.name {
+  display: block;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: dimgray;
+}
+.red {
+  color: brown;
+  font-weight: 300;
+}
