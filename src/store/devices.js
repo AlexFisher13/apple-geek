@@ -1,5 +1,5 @@
 export default {
-    'iphone': [
+    iphone: [
         {year: '2007', name: 'iPhone',        innovation: 'Multi-touch',                                                                    screen: '3.5" 320x480',   cam: '2Mp',                    selfie:'-',    video: '-',          proc: 'samsung s5',ram: '128 Mb',memory: '4,8,16 Gb',     os: 'iOS 1',  price: '$ 499-599',  img: 'img/1.jpg'},
         {year: '2008', name: 'iPhone 3G',     innovation: '3G; App Store',                                                                  screen: '3.5" 320x480',   cam: '2Mp',                    selfie:'-',    video: '-',          proc: 'samsung s5',ram: '128 Mb',memory: '4,8,16 Gb',     os: 'iOS 3',  price: '$ 199-299',  img: 'img/2.jpg'},
         {year: '2009', name: 'iPhone 3Gs',    innovation: 'Видеозапись',                                                                    screen: '3.5" 320x480',   cam: '3.2Mp',                  selfie:'-',    video: '480p',       proc: 'samsung s5',ram: '256 Mb',memory: '4,8,16 Gb',     os: 'iOS 5',  price: '$ 199-299',  img: 'img/2.jpg'},
@@ -19,14 +19,32 @@ export default {
         {year: '2017', name: 'iPhone 8 Plus', innovation: '-',                                                                              screen: '5.5" 1080x1920', cam: '12Mp f/1.8 + 12Mp f/2.8',selfie:'7Mp',  video: '4k 60fps',   proc: 'A11+M11',   ram: '3 Gb',  memory: '64, 256 Gb',    os: 'iOS 11', price: '$ 799-949',  img: 'img/13.jpg'},
         {year: '2017', name: 'iPhone X',      innovation: 'FaceID; Безррамочный дисплей',                                                   screen: '5.8" 1125x2436', cam: '12Mp f/1.8 + 12Mp f/2.4',selfie:'7Mp',  video: '4k 60fps',   proc: 'A11+M11',   ram: '3 Gb',  memory: '64, 256 Gb',    os: 'iOS 11', price: '$ 999-1149', img: 'img/14.jpg'}
     ],
-    'macbook': [
-        {year: '2007', name: 'macbook'},
-        {year: '2008', name: 'macbook'},
-        {year: '2009', name: 'macbook'}
-    ],
-    'imac': [
-        {year: '2007', name: 'imac'},
-        {year: '2008', name: 'imac'},
-        {year: '2009', name: 'imac'}
+    macbook: [
+        {year: '1991', name: 'PowerBook 100',         os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 2500'},
+        {year: '1994', name: 'PowerBook 500',         os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 2270'},
+        {year: '1994', name: 'PowerBook G4',          os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1999'},
+        {year: '1999', name: 'iBook G3',              os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1599'},
+        {year: '2001', name: 'PowerBook Titanium G4', os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 2599'},
+        {year: '2006', name: 'MacBook Pro',           os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1999'},
+        {year: '2006', name: 'MacBook',               os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1099-1499'},
+        {year: '2008', name: 'MacBook Air',           os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 999-1799'},
+        {year: '2008', name: 'MacBook',               os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1299-2799'},
+        {year: '2012', name: 'MacBook Pro',           os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1699-2199'},
+        {year: '2015', name: 'MacBook',               os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1299'},
+        {year: '2016', name: 'MacBook Pro',           os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1499-2399'},
+        {year: '2017', name: 'MacBook Pro',           os: '', lastname: '', proc: '', ram:'', features: '', price: '$ 1299-2799'},
+    ],lastname: '',
+    imac: [
+        {year: '1983', name: 'Macintosh 128K',     os: 'System 1.0',               lastname: '',                         proc: '', ram:'', price: '$ 2495'     , features: 'Mouse, keyboard and graphical interface',               },
+        {year: '1995', name: 'Macintosh Performa', os: 'System 7.0',               lastname: '',                         proc: '', ram:'', price: '$ 1600-2300', features: '500Mb-1Gb hard drive',                                  },
+        {year: '1998', name: 'iMac G3',            os: 'Mac OS 8',                 lastname: '',                         proc: '', ram:'', price: '$ 1299'     , features: 'CD-rom drive, USB-ports, Отказ от дискет. 4-60Gb Hards',},
+        {year: '2002', name: 'iMac G4',            os: 'OS X Jaguar',              lastname: '',                         proc: '', ram:'', price: '$ 1399-1999', features: 'Widescreen LCD display',                                },
+        {year: '2004', name: 'iMac G5',            os: 'OS X Panther',             lastname: '',                         proc: '', ram:'', price: '$ 1299-1899', features: 'Ultra graphic processor',                               },
+        {year: '2006', name: 'iMac G5',            os: 'OS X Tiger',               lastname: '(with Intel)',             proc: '', ram:'', price: '$ 1299-1699', features: 'iSight camera, Front Row Software. Mighty Mouse',       },
+        {year: '2007', name: 'iMac',               os: 'OS X Tiger',               lastname: '(Aluminum)',               proc: '', ram:'', price: '$ 1199-1799', features: 'Widescreen display',                                    },
+        {year: '2009', name: 'iMac',               os: 'OS X Snow Leopard',        lastname: '(Aluminum Unibody)',       proc: '', ram:'', price: '$ 1199-1699', features: 'Unibody Design, 16:9 screen',                           },
+        {year: '2012', name: 'iMac',               os: 'OS X Mountain Lion',       lastname: '(Slim Aluminum Unibody)',  proc: '', ram:'', price: '$ 1299-1799', features: 'Тонкие рамки, Fusion Drive',                            },
+        {year: '2015', name: 'iMac',               os: 'OS X Yosemite/El Capitan', lastname: '(with Retina Display)',    proc: '', ram:'', price: '$ 1499-1799', features: 'Retina Display, Thunderbolt',                           },
+        {year: '2017', name: 'iMac Pro',           os: 'OS X High Sierra',         lastname: '(with Retina 5K Display)', proc: '', ram:'', price: '$ 4999'     , features: '',                                                      },
     ]
 }
