@@ -4,7 +4,7 @@ export default class IphoneCard extends Component {
     render() {
         const i = this.props.iphone;
         return (
-            <div className='iphoneCard'>
+            <div className='card'>
                 <p><span className='year'>{i.year}</span></p>
                 <p><span className='name'>{i.name}</span></p>
                 <img src={i.img} alt=""/>
@@ -19,7 +19,6 @@ export default class IphoneCard extends Component {
                 <p><small>Память: </small>{i.memory}</p>
                 <p><small>Операционная система: </small>{i.os}</p>
                 <p><small>Цена на дату выхода: </small>{i.price}</p>
-
             </div>
         )
     }

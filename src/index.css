@@ -8,28 +8,27 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 115px 1fr;
+  /*grid-template-columns: 115px 1fr;*/
+  grid-template-columns: 1fr;
 }
 .sidebar {
   padding-top: 20px;
   background-color: rgba(0,0,0, .1);
 }
-.iphoneGrid {
+.grid {
   margin: 20px 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 }
-.iphoneCard {
+
+.card {
   background-color: white;
   padding: 10px;
-  /*-webkit-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.39);*/
-  /*-moz-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.39);*/
-  /*box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.39);*/
-  border-radius: 3px;
+  border-radius: 2px;
   transition: all .3s linear;
 }
-.iphoneCard:hover {
+.card:hover {
   transform: scale(1.02);
   -webkit-box-shadow: 12px 12px 12px -2px rgba(0,0,0,0.3);
   -moz-box-shadow: 12px 12px 12px -2px rgba(0,0,0,0.3);
@@ -100,6 +99,10 @@ small {
   color: dimgray;
 }
 .red {
-  color: brown;
+  color: white;
   font-weight: 300;
+  background-color:  darkgray;
+  border-radius: 12px;
+  padding: 3px 6px;
+  line-height: 1.4rem;
 }

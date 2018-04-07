@@ -8,7 +8,7 @@ class IMac extends Component {
     render() {
         return (
             <div className='container'>
-                <div className="iphoneGrid">
+                <div className="grid">
                     {
                         this.props.imacs.map((mac,i) =>
                             <IMacCard key={i} mac={mac} />

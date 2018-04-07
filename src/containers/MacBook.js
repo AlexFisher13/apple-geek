@@ -8,7 +8,7 @@ class MacBook extends Component {
     render() {
         return (
             <div className='container'>
-                <div className="iphoneGrid">
+                <div className="grid">
                     {
                         this.props.macbooks.map((mac,i) =>
                             <MacBookCard key={i} mac={mac} />
