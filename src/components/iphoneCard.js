@@ -9,7 +9,8 @@ export default class IphoneCard extends Component {
                 <p><span className='name'>{i.name}</span></p>
                 <img src={i.img} alt=""/>
                 <hr/>
-                <p><small>Инновация: </small><span className='red'>{i.innovation}</span></p>
+                <p><small>Инновация: </small>{i.innovation.split('; ').map((innov, i) =>
+                    <mark key={i}>{innov}</mark>)}</p>
                 <p><small>Дисплей: </small>{i.screen}</p>
                 <p><small>Камера: </small>{i.cam}</p>
                 <p><small>Селфи камера: </small>{i.selfie}</p>

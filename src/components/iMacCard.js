@@ -10,7 +10,8 @@ export default class IMacCard extends Component {
                 <p><span className='year'>{m.lastname}</span></p>
                 <img src={m.img} alt=""/>
                 <hr/>
-                <p><small>Инновация: </small>{m.features}</p>
+                <p><small>Инновация: </small>{m.features.split('; ').map((feat, i) =>
+                    <mark key={i}>{feat}</mark>)}</p>
                 <p><small>Дисплей: </small>{m.display}</p>
                 <p><small>Процессор: </small>{m.proc}</p>
                 <p><small>Оперативная память: </small>{m.ram}</p>
