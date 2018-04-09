@@ -29,11 +29,10 @@ mark {
   color: black;
   font-weight: 300;
   margin: 1px;
-  border: 1px solid;
-  background-color:  transparent;
+  background-color: #ddd;
   border-radius: 12px;
   padding: 0 6px;
-  line-height: 1.35rem;
+  line-height: 1.3rem;
 }
 img {
   display: block;
@@ -41,6 +40,7 @@ img {
 }
 table {
   font-size: .8rem;
+  margin: 0 6px;
 }
 td:first-child {
   color: darkgrey;
@@ -64,6 +64,8 @@ td:first-child {
   padding: 10px;
   border-radius: 2px;
   transition: all .3s linear;
+  display: grid;
+  vertical-align: bottom;
 }
 .card:hover {
   transform: scale(1.02);
@@ -91,4 +93,7 @@ td:first-child {
   font-size: 1.15rem;
   font-weight: 500;
   color: dimgray;
+}
+.features {
+  margin: 0 6px;
 }

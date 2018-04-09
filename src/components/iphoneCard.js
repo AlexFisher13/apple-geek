@@ -5,12 +5,13 @@ export default class IphoneCard extends Component {
         const i = this.props.iphone;
         return (
             <div className='card'>
-                <p><span className='co-name'>{i.year}</span></p>
-                <p><span className='name'>{i.name}</span></p>
-                <img src={i.img} alt=""/>
-                <hr/>
-                <p>{i.feature.split('; ').map((innov, i) =>
-                    <mark key={i}>{innov}</mark>)}</p>
+                <div>
+                    <p><span className='co-name'>{i.year}</span></p>
+                    <p><span className='name'>{i.name}</span></p>
+                    <img src={i.img} alt=""/>
+                </div>
+                <div className="features"><p>{i.feature.split('; ').map((innov, i) =>
+                    <mark key={i}>{innov}</mark>)}</p></div>
                 <table>
                     <tr><td>Display:</td><td>{i.screen}</td></tr>
                     <tr><td>Camera:</td><td>{i.cam}</td></tr>
