@@ -5,18 +5,21 @@ export default class IMacCard extends Component {
         const m = this.props.mac;
         return (
             <div className='card'>
-                <p><span className='year'>{m.year}</span></p>
+                <p><span className='co-name'>{m.year}</span></p>
                 <p><span className='name'>{m.name}</span></p>
-                <p><span className='year'>{m.lastname}</span></p>
+                <p><span className='co-name'>{m.lastname}</span></p>
                 <img src={m.img} alt=""/>
                 <hr/>
-                <p><small>Инновация: </small>{m.features.split('; ').map((feat, i) =>
+                <p>{m.features.split('; ').map((feat, i) =>
                     <mark key={i}>{feat}</mark>)}</p>
-                <p><small>Дисплей: </small>{m.display}</p>
-                <p><small>Процессор: </small>{m.proc}</p>
-                <p><small>Оперативная память: </small>{m.ram}</p>
-                <p><small>Операционная система: </small>{m.os}</p>
-                <p><small>Цена на дату выхода: </small>{m.price}</p>
+                <table>
+                    <tr><td>Display:</td><td>{m.display}</td></tr>
+                    <tr><td>Processor:</td><td>{m.proc}</td></tr>
+                    <tr><td>Memory:</td><td>{m.ram}</td></tr>
+                    <tr><td>System:</td><td>{m.os}</td></tr>
+                    <tr><td>Price:</td><td>{m.price}</td></tr>
+                </table>
+
             </div>
         )
     }
